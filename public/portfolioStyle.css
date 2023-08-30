@@ -1,0 +1,176 @@
+/* || General Styles */
+:root {
+    /* Colors */
+    --text: #010005;
+    --background: #f7f5fe;
+    --accent:#0ede2a;
+    --secondary: #c4bdfa;
+    --secondary-40per: #c4bdfa40;
+    --primary: #f2533a;
+}
+
+html {
+    background-color: var(--background);
+    color: var(--text);
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    color: var(--text);
+    margin: 0;
+    padding: 0;
+}
+
+/* Standard Elements */
+::selection {
+    color: var(--background);
+    background-color: var(--primary);
+}
+
+::-webkit-scrollbar {
+    background-color: var(--secondary-40per);
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    background-color: var(--primary);
+}
+
+h2, h3, h4, h5 {
+    display: block;
+    font-family: "Lato", sans-serif;
+    letter-spacing: 4px;
+}
+
+h2:not(.brand) {
+    font-size: 48px;
+}
+
+h3 {
+    font-size: 28px;
+}
+
+button {
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 0.4em;
+    width: 200px;
+}
+
+button:hover {
+    /* box-shadow: 0px 2px 40px var(--primary); */
+    transform: translateY(-10%);
+}
+
+/* Misc. Classes */
+.brand {
+    color: var(--primary);
+    font-style: italic;
+    font-weight: bold;
+}
+
+.brand a {
+    color: var(--primary);
+    font-style: italic;
+    font-weight: bold;
+}
+
+.primaryButton {
+    background-color: var(--primary);
+    color: var(--background);
+}
+
+.secondaryButton {
+    background-color: var(--background);
+    border: 2px solid var(--primary);
+    color: var(--primary);
+}
+
+.secondaryButtonAlternative {
+    background-color: var(--secondary);
+}
+
+/* Header */
+header {
+    background-color: var(--background);
+    display: flex;
+    justify-content: space-between;
+    left: 0;
+    padding: 0.2em 2em;
+    position: fixed;
+    top: 0;
+    width: 96vw;
+}
+
+header nav {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+header ul li {
+    display: inline;
+    list-style-type: none;
+}
+
+header a {
+    color: var(--text);
+    font-size: 24px;
+    margin-right: 1em;
+    text-decoration: none;
+}
+
+header a:hover {
+    color: var(--primary);
+}
+
+#color_mode:hover {
+    color: var(--primary);
+    cursor: pointer;
+}
+
+/* Main */
+main {
+    padding: 8em 12em;
+}
+
+/* || Hero Section */
+
+/* || About Section */
+
+/* || Projects Section */
+#projectsContainer h2 {
+    margin: auto;
+    width: fit-content;
+}
+
+.projectCardContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.projectCard {
+    background-color: var(--secondary-40per);
+    border-radius: 12px;
+    padding: 1em;
+    width: 23em;
+}
+
+.projectCard img {
+    border-radius: 12px;
+    width: 100%;
+}
+
+.projectsContainer .buttonContainer  {
+
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+/* || Contact Section */
+
+/* Footer */
