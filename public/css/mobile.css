@@ -1,0 +1,108 @@
+:root {
+    /* Colors */
+    --text: #010005;
+    --background: #f7f5fe;
+    --accent:#0ede2a;
+    --secondary: #c4bdfa;
+    --secondary-40per: #c4bdfa40;
+    --primary: #f2533a;
+}
+
+/* Mobile view */
+@media screen and (min-width: 0px) {
+    section:not(.heroSection, .copyrightNotice, .footerWaves) {
+        margin: 2rem;
+    }
+
+    /* || Header */
+
+
+    /* || Hero Section */
+    .heroSection {
+        height: 90vh;
+        padding: 4rem;
+    }
+
+    .heroSection h1 {
+        background-color: var(--background);
+        border-radius: 12px;
+        font-size: 3.2rem;
+        margin: 1rem auto;
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .linkContainer {
+        background-color: var(--background);
+        border-radius: 12px;
+        display: flex;
+        justify-content: center;
+        padding: 1rem;
+        margin: 1rem auto;
+    }
+
+    .linkContainer a {
+        margin: 0rem 1rem;
+    }
+
+    /* || About Section */
+    .aboutSection p {
+        background-color: var(--secondary-40per);
+        border-radius: 12px;
+        margin: auto;
+        padding: 2rem;
+        width: 80%;
+    }
+
+    /* || Projects Section */
+    .card {
+        background-color: var(--secondary-40per);
+        border-radius: 12px;
+        padding: 1rem;
+    }
+
+    .card img {
+        border-radius: 12px;
+        width: 100%;
+    }
+
+    .card .secondaryButton {
+        margin: 0.2rem auto;
+        width: 10rem;
+    }
+
+    .cardButtonContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: auto;
+        width: fit-content;
+    }
+
+    /* || Contact Section */
+    .contactSection form {
+        background-color: var(--secondary-40per);
+        border-radius: 12px;
+        margin: auto;
+        padding: 2rem;
+        width: 80%;
+    }
+
+    /* Footer */
+    footer {
+        display: flex;
+        justify-content: center;
+    }
+
+    .copyrightNotice {
+        background-color: var(--primary);
+        color: var(--background);
+        width: 100%;
+    }
+
+    .copyrightNotice h4 {
+        margin: auto;
+        padding: 1rem;
+        width: fit-content;
+    }
+}

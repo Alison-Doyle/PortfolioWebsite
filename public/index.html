@@ -6,10 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Styling -->
+    <link rel="stylesheet" href="/public/css/standard.css">
+    <link rel="stylesheet" href="/public/css/mobile.css">
+    <link rel="stylesheet" href="/public/css/tablet.css">
+    <link rel="stylesheet" href="/public/css/desktop.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/public/portfolioStyle.css">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,1,0" />
 
@@ -20,59 +24,73 @@
 <body>
     <header>
         <nav>
-            <a href="#aboutContainer">About</a>
+            <a href="#aboutSection">About</a>
             <a href="#projectsContainer">Projects</a>
-            <a href="#contactContainer">Contact</a>
+            <a href="#contactSection">Contact</a>
             <div id="color_mode"><span class="material-symbols-rounded">light_mode</span></div>
         </nav>
 
-        <h2 class="brand"><a href="">ALISON DOYLE</a></h2>
     </header>
 
     <main>
-        <div id="heroContainer">
-            <h1>ALISON<br>DOYLE</h1>
-        </div>
-
-        <div id="aboutContainer">
-            <h2>About</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel massa imperdiet enim tristique mattis.
-                Pellentesque auctor, purus at ultricies finibus, velit turpis ultrices nibh, ac suscipit enim augue nec
-                quam. Donec maximus eros nec placerat imperdiet. Praesent lacus mi, posuere non iaculis sed, fermentum
-                sed ex. Fusce dapibus enim arcu, sed bibendum velit mollis nec. In hac habitasse platea dictumst.
-                Maecenas fringilla justo sit amet viverra iaculis. Suspendisse sollicitudin lectus nec tincidunt semper.
-                Phasellus erat massa, sagittis quis egestas sit amet, dignissim id tortor. In imperdiet purus molestie
-                quam pulvinar, sit amet malesuada quam iaculis. Phasellus dapibus dolor nec tortor commodo porta.</p>
-        </div>
-
-        <div id="projectsContainer">
-            <h2>Projects</h2>
-            <div class="projectCardContainer">
-                <div class="projectCard">
-                    <h3>Project 1</h3>
-                    <img src="/public/resources/sample.png">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel massa imperdiet enim tristique
-                        mattis.
-                        Pellentesque auctor, purus at ultricies finibus, velit turpis ultrices nibh, ac suscipit enim
-                        augue nec
-                        quam.</p>
-                    <button class="secondaryButtonAlternative">Github</button>
-                    <button class="secondaryButtonAlternative">Live</button>
-                </div>
-                <div class="projectCard"></div>
-                <div class="projectCard"></div>
+        <section class="heroSection">
+            <h1>ALISON DOYLE</h1>
+            <div class="linkContainer">
+                <a title="GitHub Profile" href="https://github.com/Alison-Doyle">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path
+                            d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                    </svg></a>
+                <a title="View CV/Resume" href=""><svg xmlns="http://www.w3.org/2000/svg" height="24"
+                        viewBox="0 -960 960 960" width="24">
+                        <path
+                            d="M360-240h240q17 0 28.5-11.5T640-280q0-17-11.5-28.5T600-320H360q-17 0-28.5 11.5T320-280q0 17 11.5 28.5T360-240Zm0-160h240q17 0 28.5-11.5T640-440q0-17-11.5-28.5T600-480H360q-17 0-28.5 11.5T320-440q0 17 11.5 28.5T360-400ZM240-80q-33 0-56.5-23.5T160-160v-640q0-33 23.5-56.5T240-880h287q16 0 30.5 6t25.5 17l194 194q11 11 17 25.5t6 30.5v447q0 33-23.5 56.5T720-80H240Zm280-560v-160H240v640h480v-440H560q-17 0-28.5-11.5T520-640ZM240-800v200-200 640-640Z" />
+                    </svg></a>
             </div>
-            <div class="buttonContainer"><button id="seeMoreProjectsButton" class="primaryButton">See More</button></div>
-        </div>
+        </section>
 
-        <div id="contactContainer">
+        <section class="aboutSection">
+            <h2>About</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec odio dui, fermentum non pretium a,
+                vestibulum ut justo. Pellentesque at lacus laoreet, ullamcorper ligula dictum, mollis tellus. Morbi
+                maximus felis ut turpis tristique malesuada. Nam posuere ex a erat dictum, at volutpat odio tempor. Nam
+                posuere diam eros, eu aliquam dui lacinia sit amet. <a href="">Want to know more about me? Check out my
+                    CV.</a>
+            </p>
+        </section>
+
+        <section class="projectsSection">
+            <h2>Projects</h2>
+            <div id="projectCardsContainer">
+                <!-- Data from JSON will be entered heres -->
+            </div>
+        </section>
+
+        <section class="contactSection">
             <h2>Contact</h2>
-        </div>
+            <form>
+                <label>Name</label><br>
+                <input type="text"><br>
+                <label>Company</label><br>
+                <input type="text"><br>
+                <label for="">Email</label><br>
+                <input type="text"><br>
+                <label for="">Message</label><br>
+                <textarea></textarea>
+            </form>
+        </section>
     </main>
 
+
     <footer>
-        <h4>&copy; 2023 <span class="brand">ALISON DOYLE</span></h4>
+        <section class="copyrightNotice">
+            <h4>&copy; 2023 <span class="brand">ALISON DOYLE</span></h4>
+        </section>
     </footer>
+
+    <!-- Scripts -->
+    <script src="/public/javascript/populateProjects.js"></script>
 </body>
 
 </html>
