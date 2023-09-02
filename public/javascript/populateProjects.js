@@ -1,5 +1,5 @@
 // Constants
-const projectInformationFilePath = "/public/resources/json/project_information.json";
+const projectInformationFilePath = "../resources/json/project_information.json";
 
 // HTML Elements -> JS ELements
 var projectsContainer = document.getElementById("projectCardsContainer");
