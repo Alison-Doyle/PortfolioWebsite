@@ -2,18 +2,21 @@
     {
         "project_name": "Demeter",
         "description": "Demeter is an app created with the goal of allow",
+        "image": "/public/resources/images/demeterExampleImage.png",
         "github_link": "https://github.com/Alison-Doyle/DemeterFlutterApp",
         "live_example_link": ""
     },
     {
         "project_name": "Project 2",
         "description": "Demeter is an app created with the goal of allow",
+        "image": "/public/resources/images/sample.png",
         "github_link": "",
         "live_example_link": ""
     },
     {
         "project_name": "Project 3",
         "description": "Demeter is an app created with the goal of allow",
+        "image": "/public/resources/images/sample.png",
         "github_link": "",
         "live_example_link": ""
     }

@@ -14,19 +14,31 @@
         margin: 2rem;
     }
 
+    .aboutSection, .projectsSection {
+        margin: 0 0 0 100rem;
+    }
+
     /* || Header */
 
 
     /* || Hero Section */
     .heroSection {
         height: 90vh;
-        padding: 4rem;
+        padding: 3.2rem;
     }
 
     .heroSection h1 {
         background-color: var(--background);
         border-radius: 12px;
         font-size: 3.2rem;
+        margin: 1rem auto;
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .heroSection h3 {
+        background-color: var(--background);
+        border-radius: 12px;
         margin: 1rem auto;
         padding: 1rem;
         text-align: center;
@@ -58,6 +70,7 @@
     .card {
         background-color: var(--secondary-40per);
         border-radius: 12px;
+        margin: 2rem 0rem;
         padding: 1rem;
     }
 
@@ -88,10 +101,29 @@
         width: 80%;
     }
 
-    /* Footer */
-    footer {
-        display: flex;
-        justify-content: center;
+    input {
+        width: 10rem;
+    }
+
+    textarea {
+        min-height: 4rem;
+        max-height: 20rem;
+        min-width: 96%;
+        max-width: 96%;
+    }
+
+    .contactSection button {
+        margin: 1rem auto;
+        width: 10rem;
+    }
+
+    /* || Footer */
+    .footerWaves {
+        background-image: url('../resources/svg/footerWaves.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 20rem;
     }
 
     .copyrightNotice {
