@@ -90,7 +90,7 @@ input:focus, textarea:focus {
 
 /* Section Classes */
 .heroSection {
-    background-image: url('/public/resources/svg/heroWaves.svg');
+    background-image: url('./public/resources/svg/heroWaves.svg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
