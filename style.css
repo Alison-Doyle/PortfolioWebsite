@@ -316,19 +316,37 @@ textarea:focus {
         padding: 1rem 0;
     }
 
+    /* || About Section */
+    .aboutSection p {
+        width: min(50%, 52rem);
+    }
+
     /* || Projects */
     #projectCardsContainer {
         display: flex;
-        justify-content: space-between;
-        height: 40rem;
+        justify-content: center;
+        flex-wrap: wrap;
+        height: fit-content;
     }
 
     .card {
-        width: 24rem;
+        margin: 1rem 1rem;
+        width: max(26%, 24rem);
+        min-width: 16rem;
+    }
+
+    .card img {
+        height: 14rem;
     }
 
     .card p {
         height: 7.2rem;
+    }
+
+    /* || Contact */
+    .contactSection form {
+        margin: auto;
+        width: min(50%, 52rem);
     }
 
     /* || Footer */
