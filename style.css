@@ -1,0 +1,355 @@
+:root {
+    /* Light Theme/Default Colors */
+    --text: #0E091F;
+    --background: #f7f5fe;
+    --secondary: #c4bdfa;
+    --secondary-40per: #c4bdfa40;
+    --primary: #f2533a;
+}
+
+.darkTheme {
+    --text: #f7f5fe;
+    --background: #0E091F;
+}
+
+/* Default Styling */
+html {
+    font-family: "Roboto", sans-serif;
+    scroll-behavior: smooth;
+    scroll-margin: 2em;
+}
+
+body {
+    background-color: var(--background);
+    margin: 0;
+    padding: 0;
+}
+
+header,
+main {
+    background-color: var(--background);
+    color: var(--text);
+}
+
+h2,
+h3,
+h4,
+h5 {
+    font-family: "Lato", sans-serif;
+    letter-spacing: 0.2rem;
+}
+
+h2 {
+    font-size: 2.8rem;
+    margin: auto;
+    width: fit-content;
+}
+
+a {
+    color: var(--text);
+    font-style: italic;
+}
+
+button {
+    border: none;
+    border-radius: 12px;
+    font-size: 1.2rem;
+    padding: 0.4rem 1rem;
+    transition: 0.1s transform;
+}
+
+button:hover {
+    cursor: pointer;
+    transform: translateY(-10%);
+}
+
+input,
+textarea {
+    border: none;
+    border-radius: 12px;
+    height: 1rem;
+    padding: 0.4rem;
+}
+
+input:focus,
+textarea:focus {
+    outline: 2px solid var(--secondary);
+}
+
+/* Mobile view */
+@media screen and (min-width: 0px) {
+    section:not(.heroSection, .copyrightNotice, .footerWaves) {
+        margin: 2rem;
+    }
+
+    .aboutSection,
+    .projectsSection {
+        margin: 0 0 0 100rem;
+    }
+
+    /* || Header */
+    .heroSection {
+        background-image: url('/public/resources/svg/heroWaves.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    /* || Hero Section */
+    .heroSection {
+        height: 90vh;
+        padding: 3.2rem;
+    }
+
+    .heroSection h1 {
+        background-color: var(--background);
+        border-radius: 12px;
+        font-size: 3.2rem;
+        margin: 1rem auto;
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .heroSection h3 {
+        background-color: var(--background);
+        border-radius: 12px;
+        margin: 1rem auto;
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .linkContainer {
+        background-color: var(--background);
+        border-radius: 12px;
+        display: flex;
+        justify-content: center;
+        padding: 1rem;
+        margin: 1rem auto;
+    }
+
+    .linkContainer a {
+        fill: var(--text);
+        margin: 0rem 1rem;
+    }
+
+    .linkContainer a:hover {
+        fill: var(--primary);
+    }
+
+    /* || About Section */
+    .aboutSection {
+        padding-bottom: 12rem;
+        padding-top: 2rem;
+    }
+
+    .aboutSection p {
+        background-color: var(--secondary-40per);
+        border-radius: 12px;
+        margin: auto;
+        padding: 2rem;
+        width: 80%;
+    }
+
+    /* || Projects Section */
+    .projectsSection {
+        padding-bottom: 12rem;
+    }
+
+    .card {
+        background-color: var(--secondary-40per);
+        border-radius: 12px;
+        margin: 2rem 0rem;
+        padding: 1rem;
+    }
+
+    .card img {
+        border-radius: 12px;
+        width: 100%;
+    }
+
+    .cardButton {
+        background-color: var(--secondary);
+        color: #0E091F;
+        margin: 0.2rem auto;
+        width: 10rem;
+    }
+
+    .cardButtonContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: auto;
+        width: fit-content;
+    }
+
+    /* || Contact Section */
+    .contactSection form {
+        background-color: var(--secondary-40per);
+        border-radius: 12px;
+        margin: auto;
+        padding: 2rem;
+        width: 80%;
+    }
+
+    input {
+        width: 10rem;
+    }
+
+    textarea {
+        min-height: 4rem;
+        max-height: 20rem;
+        min-width: 96%;
+        max-width: 96%;
+    }
+
+    .contactSection button {
+        margin: 1rem auto;
+        width: 10rem;
+    }
+
+    /* || Footer */
+    .footerWaves {
+        background-image: url('/public/resources/svg/footerWavesDesktop.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 20rem;
+    }
+
+    .copyrightNotice {
+        background-color: var(--primary);
+        color: var(--background);
+        width: 100%;
+    }
+
+    .copyrightNotice h4 {
+        margin: auto;
+        padding: 1rem;
+        width: fit-content;
+    }
+}
+
+/* Desktop View */
+@media screen and (min-width: 1000px) {
+    :target {
+        position: relative;
+        top: -8rem;
+    }
+
+    html {
+        scroll-margin: 2em;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    section:not(.heroSection, .copyrightNotice, .footerWaves) {
+        margin: 0.2rem 14rem;
+    }
+
+    /* || Header */
+    header {
+        background-color: var(--background);
+        display: flex;
+        justify-content: space-between;
+        padding: 0.4rem 1rem;
+        position: fixed;
+        top: 0;
+        width: 98vw;
+    }
+
+    header nav {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    header ul li {
+        display: inline;
+        list-style-type: none;
+    }
+
+    header a {
+        color: var(--text);
+        font-size: 24px;
+        margin-right: 1em;
+        text-decoration: none;
+        font-style: normal;
+    }
+
+    header a:hover {
+        color: var(--primary);
+    }
+
+    #color_mode:hover {
+        color: var(--primary);
+        cursor: pointer;
+    }
+
+    /* || Hero Section */
+    .centerContent {
+        display: flex;
+        margin: 10rem auto;
+        width: fit-content;
+    }
+
+    .heroSection h1 {
+        font-size: 6rem;
+        width: 52rem;
+    }
+
+    .heroSection h3 {
+        width: 52rem;
+    }
+
+    .heroSection .linkContainer {
+        display: flex;
+        flex-direction: column;
+        height: 11.6rem;
+        margin-left: 1rem;
+        width: fit-content;
+    }
+
+    .linkContainer a {
+        padding: 1rem 0;
+    }
+
+    /* || Projects */
+    #projectCardsContainer {
+        display: flex;
+        justify-content: space-between;
+        height: 40rem;
+    }
+
+    .card {
+        width: 24rem;
+    }
+
+    .card p {
+        height: 7.2rem;
+    }
+
+    /* || Footer */
+    footer {
+        padding: 0;
+        margin: 0;
+    }
+
+    .footerWaves {
+        height: 32rem;
+    }
+
+    .copyrightNotice {
+        background-color: var(--primary);
+        color: var(--background);
+        width: 100%;
+    }
+
+    .copyrightNotice h4 {
+        margin: auto;
+        padding: 2rem;
+        width: fit-content;
+    }
+}
