@@ -89,7 +89,7 @@ textarea:focus {
 
     /* || Header */
     .heroSection {
-        background-image: url('/public/resources/svg/heroWaves.svg');
+        background-image: url('./public/resources/svg/heroWaves.svg');
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -209,7 +209,7 @@ textarea:focus {
 
     /* || Footer */
     .footerWaves {
-        background-image: url('/public/resources/svg/footerWavesDesktop.svg');
+        background-image: url('./public/resources/svg/footerWavesDesktop.svg');
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
