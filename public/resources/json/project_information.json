@@ -2,21 +2,21 @@
     {
         "project_name": "Demeter",
         "description": "Demeter is an app made with Flutter and Firebase that allows users to monitor and control the care of their plants.",
-        "image": "/public/resources/images/demeterExampleImage.png",
+        "image": "../resources/images/demeterExampleImage.png",
         "github_link": "https://github.com/Alison-Doyle/DemeterFlutterApp",
         "live_example_link": ""
     },
     {
         "project_name": "Project 2",
         "description": "This is a placeholder description for a placeholder project. It is made with x langauge and y as a backend. It is great at doing stuff and is kenough. This project is a ken/10",
-        "image": "./public/resources/images/sample.png",
+        "image": "../resources/images/sample.png",
         "github_link": "",
         "live_example_link": ""
     },
     {
         "project_name": "Project 3",
         "description": "This is a placeholder description for a placeholder project. It is made with x langauge and y as a backend. It is great at doing stuff and is kenough. This project is a ken/10",
-        "image": "./public/resources/images/sample.png",
+        "image": "../resources/images/sample.png",
         "github_link": "",
         "live_example_link": ""
     }
