@@ -5,11 +5,13 @@
     --secondary: #c4bdfa;
     --secondary-40per: #c4bdfa40;
     --primary: #f2533a;
+    --shadow: #0E091F12
 }
 
 .darkTheme {
     --text: #f7f5fe;
     --background: #0E091F;
+    --shadow: #060218;
 }
 
 /* Default Styling */
@@ -88,15 +90,13 @@ textarea:focus {
     }
 
     /* || Header */
+
+    /* || Hero Section */
     .heroSection {
         background-image: url('./public/resources/svg/heroWaves.svg');
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-    }
-
-    /* || Hero Section */
-    .heroSection {
         height: 90vh;
         padding: 3.2rem;
     }
@@ -229,6 +229,45 @@ textarea:focus {
     }
 }
 
+@media screen and (max-width: 1000px) {
+    /* || Header */
+    header {
+        box-shadow: 4px 4px 12px var(--shadow);
+        display: flex;
+        height: 2rem;
+        justify-content: space-between;
+        position: fixed;
+        vertical-align: middle;
+        width: 100%;
+    }
+
+    header div {
+        cursor: pointer;
+        padding: 0.2rem;
+    }
+
+    nav {
+        background-color: var(--background);
+        box-shadow: 4px 12px 12px var(--shadow);
+        display: none;
+        flex-direction: column;
+        height: 100vh;
+        position: fixed;
+        top: 2rem;
+        width: 40%;
+        z-index: 1;
+    }
+
+    nav a {
+        color: var(--text);
+        font-style: normal;
+        margin: 1rem auto;
+        padding: 0.4rem;
+        text-decoration: none;
+        width: fit-content;
+    }
+}
+
 /* Desktop View */
 @media screen and (min-width: 1000px) {
     :target {
@@ -281,6 +320,10 @@ textarea:focus {
 
     header a:hover {
         color: var(--primary);
+    }
+
+    #menu_button {
+        display: none;
     }
 
     #color_mode:hover {
